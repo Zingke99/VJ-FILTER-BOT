@@ -56,9 +56,9 @@ MULTIPLE_DATABASE = bool(environ.get('MULTIPLE_DATABASE', True)) # Set True or F
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://dasniru929:dasniru123@cluster0.51p5e.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # IF Multiple Database Is False Then Fill Only This Database Url.
 if MULTIPLE_DATABASE == True:
     USER_DB_URI = DATABASE_URI
-    OTHER_DB_URI = DATABASE_URI
-    FILE_DB_URI = DATABASE_URI
-    SEC_FILE_DB_URI = DATABASE_URI
+    OTHER_DB_URI = "mongodb+srv://lokibhai095:lokibhai095@cluster0.69dls.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    FILE_DB_URI = "mongodb+srv://ramparshadbismillah:nirudas123@cluster0.xkwhj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+    SEC_FILE_DB_URI = "mongodb+srv://swamibaba079:swamibaba079@cluster0.tfebd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 else:
     USER_DB_URI = DATABASE_URI # This Db is for User Data Store
     OTHER_DB_URI = environ.get('OTHER_DB_URI', "mongodb+srv://lokibhai095:lokibhai095@cluster0.69dls.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # This Db Is For Other Data Store
