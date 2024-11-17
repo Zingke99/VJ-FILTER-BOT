@@ -63,7 +63,7 @@ else:
     USER_DB_URI = DATABASE_URI # This Db is for User Data Store
     OTHER_DB_URI = environ.get('OTHER_DB_URI', "") # This Db Is For Other Data Store
     FILE_DB_URI = environ.get('FILE_DB_URI', "mongodb+srv://Koi:Lok@cluster0.bt8r7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # This Db Is For File Data Store
-    SEC_FILE_DB_URI = environ.get('SEC_FILE_DB_URI', "mongodb://swamibaba079:swamibaba079@<hostname>/?ssl=true&replicaSet=atlas-12vs5e-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0") # This Db is for File Data Store When First Db Is Going To Be Full.
+    SEC_FILE_DB_URI = environ.get('SEC_FILE_DB_URI', "mongodb+srv://swamibaba079:swamidas079@cluster0.tfebd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0") # This Db is for File Data Store When First Db Is Going To Be Full.
     
 DATABASE_NAME = environ.get('DATABASE_NAME', "techvjfilterbot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'vjcollection')
